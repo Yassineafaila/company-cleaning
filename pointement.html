@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- --link-css-- -->
+    <link rel="stylesheet" href="css/desing.css" />
+    <!-- --font-awesome-- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- --font-google-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>pointement</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="/assests/logo.jpeg" alt="CHELBEAF" />
+        <button class="close" style="display: none">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav>
+          <button class="hamburger" style="display: none">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="list">
+            <li class="list-item"><a href="index.html" class="list-link">Home</a></li>
+            <li class="list-item">
+              <a href="index.html" class="">About us</a>
+            </li>
+            <li class="list-item">
+              <a href="index.html" class="list-link">Services</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- --start-pop-form-- -->
+    <div class="pop-up">
+      
+      <div class="form">
+        <p>
+          prendre rendez-vous afin d'etablir un devis specifique a vos besoins.
+        </p>
+        <div class="form-element">
+          <label for="prenom">Prenom *</label>
+          <input type="text" id="prenom" />
+        </div>
+        <div class="form-element">
+          <label for="nom">nom *</label>
+          <input type="text" id="nom" />
+        </div>
+        <div class="form-element">
+          <label for="telephone">Numero de Telephone *</label>
+          <input type="text" id="telephone" />
+        </div>
+        <div class="form-element">
+          <label for="Addresse">Addresse </label>
+          <input type="text" id="Addresse" />
+        </div>
+        <div class="form-element">
+          <label for="tdl">Type de logement</label>
+          <select id="tdl">
+            <option value="" disabled selected>
+              Veuillez selectionner le type de logement
+            </option>
+            <optgroup>
+              <option value="st">Studio</option>
+              <option value="st">Appartement 1 chambre</option>
+              <option value="Ap2c">Appartement 2 chambres</option>
+              <option value="Ap3c">Appartement 3 chambres et +</option>
+              <option value="M2">Maison 2 etages</option>
+              <option value="M3">Maison 3 etages</option>
+              <option value="V">Villa</option>
+              <option value="B">Bureau</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-element">
+          <label for="tds">Type de Service</label>
+          <select id="tds">
+            <option value="" disabled selected>
+              choisir le service qui vous interesse
+            </option>
+            <optgroup>
+              <option value="Ndm">Nettoyage de maison</option>
+              <option value="Ndt">Nettoyage de tapis</option>
+              <option value="Ndb">Nettoyage de bureaux</option>
+              <option value="Ndv">Nettoyage de vitres</option>
+              <option value="Nep">Nettoyage en profondeur</option>
+              <option value="Nac">Nettoyage après construction</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-element">
+          <label for="jeh">Jour et heure preferees</label>
+          <select id="jeh">
+            <option value="" disabled selected>choisir un jour</option>
+            <optgroup>
+              <option value="lundi">lundi</option>
+              <option value="Mardi">Mardi</option>
+              <option value="Mercredi">Mercredi</option>
+              <option value="Jeudi">Jeudi</option>
+              <option value="Vendredi">Vendredi</option>
+              <option value="Samedi">Samedi</option>
+              <option value="Dimanche">Dimanche</option>
+            </optgroup>
+          </select>
+          <input type="time" />
+        </div>
+        <div class="form-element">
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Veuillez fournir tout commnentaire supplementaire ou toute instruction specifique"
+          ></textarea>
+        </div>
+        <div class="form-element">
+          <button type="submit">Envoyer</button>
+        </div>
+      </div>
+    </div>
+    <!-- --end-pop-form-- -->
+  </body>
+</html>
